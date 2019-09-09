@@ -1,0 +1,145 @@
+/*Variables*/
+:root{
+    --dark: #525A65;
+    --shadow: #5C6879;
+    --light: #FFFFFF;
+    --bg: #F7F8FA;
+}
+
+.wraper{
+    background: var(--bg);
+    width: 100%;
+    display: grid;    
+    grid-template-areas: 
+        'nav boxes'
+        'nav plots'
+        'nav plots'
+        'footer footer';
+}
+.boxes, .plots{
+    display: grid;
+    grid-gap: 20px;
+    padding: 15px;
+    
+}
+.plots{
+    width: 100%;
+    background: #FFFFFF;
+}
+nav{
+    grid-area: nav;
+    width: 250px;
+    background: var(--dark);
+    vertical-align: middle;
+    color: var(--light);
+
+}
+.main-nav ul{
+    display: grid;
+    grid-gap: 20px;
+    padding: 20px;
+    list-style: none;
+    background: var(--dark);
+}
+.main-nav li{
+    height: 50px;
+}
+.main-nav li:hover{
+    background: var(--shadow);
+    width: 100%;
+}
+
+
+.boxes{
+    display: grid;
+    grid-area: boxes;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px;
+    background: var(--bg);
+}
+
+.power,.energy,.irradiance{
+    display: grid;
+    width: 300px;
+    min-width: 200 px;
+    background: var(--light);
+    padding: 20px;
+}
+
+.plots{
+    grid-area: plots;
+}
+footer{
+    grid-area: footer;
+    height: 35px;
+    padding: 0;
+    background: #000000;
+    text-align: center;
+    color: var(--bg);
+}
+canvas{
+    background: var(--light);
+}
+/*
+body{
+    background: var(--bg);
+    display: grid;
+}
+
+.wrapper{
+    display: grid; 
+    grid-gap: 20px;
+}
+
+.boxes{
+    display: grid;
+    grid-template-columns:  repeat(3, 1fr);
+    grid-gap: 20px;
+    background: var(--bg);
+}
+.power,.energy,.irradiance{
+    width: 400px;
+    min-width: 200 px;
+    background: var(--light);
+    padding: 20px;
+}
+
+.main-nav{
+    width: 376px;
+    display: grid;
+    background: var(--dark);
+    padding: 2px;
+}
+.main-nav ul{
+    display: grid;
+    grid-gap: 20px;
+    padding: 0;
+    list-style: none; 
+    background: var(--dark);
+}
+
+.main-nav a{
+    display: block;
+    text-decoration: none;
+    padding: 0.8rem;
+    text-align: center;
+    font-size: 1.1rem;
+    box-shadow: var(--shadow);
+    color: var(--light);  
+}
+
+.main-nav a:hover{
+    background: var(--shadow);
+}
+
+.logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+footer{
+    text-align: center;
+}
+*/
