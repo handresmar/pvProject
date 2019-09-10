@@ -9,10 +9,11 @@
     margin: 0;
     padding: 0;
     color: #5A5A5A;
+    font-family: 'proxima-nova', sans-serif;
 }
 
 .wraper{
-    font-family: 'proxima-nova', sans-serif;
+    
     background: var(--bg);
     width: 100%;
     display: grid;    
@@ -95,7 +96,7 @@ hr{
     display: block;
     height: 10x;
     border: 0;
-    border-top: 2px solid rgb(7, 1, 63);
+    border-top: 3px solid #83BEDF;
     margin: 1em 0;
     padding: 0;
 }
