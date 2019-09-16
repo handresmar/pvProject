@@ -1,10 +1,14 @@
 //console.log('Server running');
 const express = require('express'); //gestor de servidor
-const app = express(); // aplicación
+
 const path = require('path'); //gestor de rutas
 
+//initialization
+const app = express(); // aplicación
+require('./database');
+
 //settings
-app.set('port',3000);
+app.set('port',process.env.PORT || 3000);
 app.set('views',path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
