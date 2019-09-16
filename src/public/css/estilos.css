@@ -32,14 +32,18 @@
 }
 nav{
     grid-area: nav;
-    width: 300px;
+    width: 270px;
     background: var(--dark);
     vertical-align: middle;
     color: var(--light);
 
 }
-nav a, nav i{
-    display: inline;
+nav i {
+    color: var(--light);
+    margin: 0.5rem;
+}
+nav a {
+    display: inline-block;
     padding: 0.8rem;
     text-decoration: none;
     color: var(--light);
@@ -59,9 +63,8 @@ nav a, nav i{
     background: var(--dark);
 }
 .main-nav li{
-    display: inline-flex;
-    height: 50px;
-}
+    display: block;
+  }
 .main-nav li:hover{
     background: var(--shadow);
     width: 100%;
