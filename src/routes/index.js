@@ -4,7 +4,6 @@ const router = express.Router();
 router.get('/', (req, res) => {
     //console.log(router);
     //res.sendFile(path.join(__dirname, '/views/index.ejs'));
-    
     res.render('index', { title: 'Principal' });
 
 });
